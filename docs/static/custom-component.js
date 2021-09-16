@@ -31,6 +31,8 @@ class Head extends HTMLElement {
       <meta charset="UTF-8" />
       <title>${this.title}</title>
 
+      <meta name="keywords" content="programming, coding, colors, practices" />
+      
       <meta name="og:site_name" content="The averagelolol's land" />
       <meta name="og:title" content="${this.title}" />
       <meta name="og:description" content="${Head.og_description}" />
