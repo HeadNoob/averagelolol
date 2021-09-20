@@ -35,8 +35,8 @@
   
   --background-modifier-hover: #5dade250;
   --background-modifier-active: #5dade280;
-  --background-modifier-selected: #f1c40f55;
-  --background-modifier-accent: #f1c40f55;
+  --background-modifier-selected: #138d758b;
+  --background-modifier-accent: #138d758b;
   
   --text-normal: #aed6f1;
   --text-muted: #b5b5b5;
@@ -52,5 +52,13 @@
 }
 
 [class*="tab"] { background-color: var(--background-primary); }
+
 [class^="botTag"], [class^="headerBotTag"] { background-color: #b03a2e; }
 [class^="botTagVerified"] { background-color: #12bc35; margin-right: 5px; }
+
+[class^="focusLock"] div { background-color: var(--background-secondary); }
+[class^="focusLock"] [class^="flex"] { background-color: var(--background-tertiary); }
+[class^="focusLock"] [class^="flex"] button div { background-color: initial; }
+
+[class^="userLimit"] [class^="users"] { color: #e0e0e0; }
+[class^="userLimit"] [class^="total"] { padding-left: 4px; width: auto; background-color: #239b56; color: #e0e0e0; }
