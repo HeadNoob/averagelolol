@@ -40,7 +40,7 @@
   font-family: Exo !important;
 }
 
-#add_friend-tab { background-color: var(--background-primary); }
+#online-tab, #all-tab, #pending-tab, #blocked-tab, #add_friend-tab { background-color: var(--background-primary); }
 
 pre code, pre code *, .inline { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
 
