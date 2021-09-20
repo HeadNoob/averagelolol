@@ -8,8 +8,11 @@
  * 2. Copy and paste the CSS below and tell the injector
  *    to only use the CSS below for 'discord.com'
  * 3. Done!
+ * 
+ * Fun fact: I love the Exo font. Not Exo 2, though, layout 
+ * shifts cause some letters to look too thin at smaller 
+ * sizes.
  */
-
 @font-face {
   font-family: 'Exo';
   font-style: normal;
@@ -37,15 +40,13 @@
   font-family: Exo !important;
 }
 
-#app-mount { font-family: inherit; }
 #add_friend-tab { background-color: var(--background-primary); }
+pre code, pre code *, .inline { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
 
-main { overflow-y: auto; }
-pre code, pre code * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
-
-/* CLASS-SPECIFIC | MAY BREAK AFTER UPDATES */
-.botTag-3W9SuW { background-color: #b03a2e; }
-.botTagVerified-1klIIt { background-color: #12bc35; }
-.botText-1526X_ { padding-left: 3px; }
+/* CLASS-SPECIFIC | MAY BREAK AFTER DISCORD (WEB)APP UPDATES */
+.botTag-3W9SuW, .headerBotTag-qNEsTk { background-color: #b03a2e; }
+.botTagVerified-1klIIt { background-color: #12bc35; margin-right: 5px; }
 
 .codeLine-14BKbG * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
+
+.textarea-2r0oV8 { background-color: var(--background-tertiary); }
