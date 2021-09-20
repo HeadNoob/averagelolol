@@ -22,7 +22,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-* { 
+*, .theme-dark { 
   --background-primary: #09094d;
   --background-secondary: #101050;
   --background-secondary-alt: #050542;
@@ -41,12 +41,11 @@
 }
 
 #add_friend-tab { background-color: var(--background-primary); }
+
 pre code, pre code *, .inline { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
 
 /* CLASS-SPECIFIC | MAY BREAK AFTER DISCORD (WEB)APP UPDATES */
 .botTag-3W9SuW, .headerBotTag-qNEsTk { background-color: #b03a2e; }
 .botTagVerified-1klIIt { background-color: #12bc35; margin-right: 5px; }
 
-.codeLine-14BKbG * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
-
-.textarea-2r0oV8 { background-color: var(--background-tertiary); }
+.codeLine-14BKbG *, .inlineCode-2ngu6Y *, .codeBlockText-9TnoxQ * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
