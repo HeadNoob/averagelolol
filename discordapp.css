@@ -1,0 +1,51 @@
+/*               DISCORD CUSTOM STYLING
+ *  No copyright, but if you want to support me, please
+ * credit me if you plan to modify this CSS and publish
+ * the modified version!
+ *
+ *                     HOW TO USE
+ * 1. Install Stylus (or any CSS injector)
+ * 2. Copy and paste the CSS below and tell the injector
+ *    to only use the CSS below for 'discord.com'
+ * 3. Done!
+ */
+
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/exo/v12/4UaZrEtFpBI4f1ZSIK9d4LjJ4lM3OwRmOw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* { 
+  --background-primary: #09094d;
+  --background-secondary: #101050;
+  --background-secondary-alt: #050542;
+  --background-tertiary: #121255;
+  --background-accent: #0b5345;
+  --background-floating: #1b4f72;
+
+  --channeltextarea-background: var(--background-secondary-alt);
+  --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
+  
+  --text-normal: #aed6f1;
+  --text-muted: #b5b5b5;
+  --text-link: #f7dc6f;
+  
+  font-family: Exo !important;
+}
+
+#app-mount { font-family: inherit; }
+#add_friend-tab { background-color: var(--background-primary); }
+
+main { overflow-y: auto; }
+pre code, pre code * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
+
+/* CLASS-SPECIFIC | MAY BREAK AFTER UPDATES */
+.botTag-3W9SuW { background-color: #b03a2e; }
+.botTagVerified-1klIIt { background-color: #12bc35; }
+.botText-1526X_ { padding-left: 3px; }
+
+.codeLine-14BKbG * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
