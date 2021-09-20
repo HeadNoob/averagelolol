@@ -22,30 +22,35 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-*, .theme-dark { 
+*, [class^="theme"] { 
   --background-primary: #09094d;
   --background-secondary: #101050;
   --background-secondary-alt: #050542;
   --background-tertiary: #121255;
   --background-accent: #0b5345;
   --background-floating: #1b4f72;
-
-  --channeltextarea-background: var(--background-secondary-alt);
-  --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
+  
+  --background-mobile-primary: var(--background-primary);
+  --background-mobile-secondary: var(--background-secondary);
+  
+  --background-modifier-hover: #5dade250;
+  --background-modifier-active: #5dade280;
+  --background-modifier-selected: #f1c40f55;
+  --background-modifier-accent: #f1c40f55;
   
   --text-normal: #aed6f1;
   --text-muted: #b5b5b5;
   --text-link: #f7dc6f;
   
-  font-family: Exo !important;
+  --channeltextarea-background: var(--background-secondary-alt);
+  --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
+  
+  --font-primary: Exo !important;
+  --font-display: Exo !important;
+  --font-headline: Exo !important;
+  --font-code: 'Lucida Console', Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
 }
 
-#online-tab, #all-tab, #pending-tab, #blocked-tab, #add_friend-tab { background-color: var(--background-primary); }
-
-pre code, pre code *, .inline { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
-
-/* CLASS-SPECIFIC | MAY BREAK AFTER DISCORD (WEB)APP UPDATES */
-.botTag-3W9SuW, .headerBotTag-qNEsTk { background-color: #b03a2e; }
-.botTagVerified-1klIIt { background-color: #12bc35; margin-right: 5px; }
-
-.codeLine-14BKbG *, .inlineCode-2ngu6Y *, .codeBlockText-9TnoxQ * { font-family: 'Lucida Console', 'Courier New', Courier, monospace !important; }
+[class*="tab"] { background-color: var(--background-primary); }
+[class^="botTag"], [class^="headerBotTag"] { background-color: #b03a2e; }
+[class^="botTagVerified"] { background-color: #12bc35; margin-right: 5px; }
