@@ -34,14 +34,15 @@
 	
   --channeltextarea-background: var(--background-secondary-alt);
   --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
-  
+	
+  font-family: 'Exo 2', fontawesome, sans-serif;
   --font-code: 'Lucida Console', Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
 }
 
 [class^="channelTextArea"] div { background-color: var(--background-secondary-alt) !important; }
 
 [class*="Modal"], [class^="focusLock"] [class^="root"], [class^="focusLock"] [class^="modalRoot"], 
-  [class^="focusLock"] [class^="header"] { background-color: var(--background-secondary) !important; }
+  [class^="focusLock"] [class^="header"], [class^="modal"] div { background-color: var(--background-secondary) !important; }
 
 [class*="footer"] { background-color: var(--background-tertiary) !important; }
 
@@ -49,11 +50,14 @@
 
 [class^="botTag"], [class^="headerBotTag"] { background-color: #b03a2e; } [class^="botTagVerified"] { background-color: #12bc35; margin-right: 5px; }
 
-[class^="userLimit"] [class^="users"] { color: #e0e0e0; }
-[class^="userLimit"] [class^="total"] { padding-left: 4px; width: auto; background-color: #239b56; color: var(--text-calm-white); }
+[class^="userLimit"] [class^="users"] { color: #e0e0e0; } [class^="userLimit"] [class^="total"] { padding-left: 4px; width: auto; background-color: #239b56; color: var(--text-calm-white); }
 
 [class^="markup"] [class^="syntaxBefore"] span, [class^="markup"] [class^="syntaxAfter"] span { color: #616a6b; }
-[class^="markup"] [class^="bold"] span, [class^="markup"] [class^="italics"] span { color: #d2b4de !important; }
+[class^="markup"] [class^="bold"] span, [class^="markup"] [class^="italics"] span, [class^="markup"] [class^="underline"] span, [class^="markup"] [class^="strikethrough"] span 
+{ color: #d2b4de !important; }
 
-[class^="layer"] div { color: var(--text-calm-white); } 
+[class^="layer"] div { color: var(--text-calm-white); }
 [class*="modeMuted"] div { color: var(--interactive-muted); }
+
+/* WARNING: CLASS-NAME SPECIFIC ; MAY BREAK AFTER UPDATES */
+.container-2ax-kl { text-transform: unset; }
