@@ -19,27 +19,6 @@
   
   --background-mobile-primary: var(--background-primary);
   --background-mobile-secondary: var(--background-secondary);
-  /*               DISCORD CUSTOM STYLING
- *  No copyright, but if you want to support me, please
- * credit me if you plan to modify this CSS and publish
- * the modified version!
- *
- *                     HOW TO USE
- * 1. Install Stylus (or any CSS injector)
- * 2. Copy and paste the CSS below and tell the injector
- *    to only use the CSS below for 'discord.com'
- * 3. Done!
- */
-*, [class^="theme"] { 
-  --background-primary: #09094d;
-  --background-secondary: #101050;
-  --background-secondary-alt: #050542;
-  --background-tertiary: #121255;
-  --background-accent: #0b5345;
-  --background-floating: #21618c;
-  
-  --background-mobile-primary: var(--background-primary);
-  --background-mobile-secondary: var(--background-secondary);
   
   --background-modifier-hover: #5dade275;
   --background-modifier-active: #5dade280;
@@ -72,9 +51,10 @@
 [id^="private-channels-"]:hover,
 [id*="channels"] div [class*="content"]:hover,
 [class*="sidebar"] [class*="item"]:hover,
-[class*="members"] [class*="member"]:hover { 
+[class*="members"] [class*="member-"]:hover { 
 	animation: channelHover 450ms forwards; 
 }
+
 
 [class*="channelTextArea"] div { background-color: var(--background-secondary-alt) !important; }
 
@@ -114,70 +94,7 @@
 [class*="modeMuted"] div { color: var(--interactive-muted); }
 [class*="modeUnread"] [class^="channelName"] { color: #f0f0f0; }
 
-[class*="activityText"] { color: #fdd605 !important; }
-[class*="activityText"] strong { color: #92ec95 !important; }
-
-/* WARNING: CLASS-NAME SPECIFIC ; MAY BREAK AFTER UPDATES */
-.container-2ax-kl { text-transform: unset; font-size: 13px; }
-  --background-modifier-hover: #5dade250;
-  --background-modifier-active: #5dade280;
-  --background-modifier-selected: #138d758b;
-  --background-modifier-accent: #138d758b;
-  
-  --text-normal: #bde6fc;
-  --text-muted: #b5b5b5;
-  --text-link: #f7dc6f;
-	  --text-calm-white: #d3d3d3;
-	
-  --interactive-muted: #909497;
-	
-  --channeltextarea-background: var(--background-secondary-alt);
-  --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
-	
-	--font-primary: 'Exo 2', 'Lucida Sans Unicode', sans-serif;
-	--font-display: var(--font-primary);
-	--font-headline: var(--font-primary);
-  --font-code: 'Lucida Console', Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
-  
-	font-family: var(--font-primary);
-}
-
-[class*="channelTextArea"] div { background-color: var(--background-secondary-alt) !important; }
-
-[class*="focusLock"] [class*="modalRoot"],
-[class*="focusLock"] [class*="root"] { 
-	background-color: var(--background-secondary) !important; 
-}
-
-[class*="footer"]:not(.footer-3UKYOU) { background-color: var(--background-tertiary) !important; }
-
-[class*="tab"] { background-color: var(--background-primary); }
-
-[class*="botTag"], [class^="headerBotTag"] { background-color: #b03a2e; } 
-[class*="botTagVerified"] { background-color: #12bc35; margin-right: 5px; }
-
-[class*="flowerStarContainer"] { color: #8b8210 !important; }
-
-[class*="userLimit"] [class*="users"] { color: #e0e0e0; } 
-[class*="userLimit"] [class*="total"] { padding-left: 4px; width: auto; background-color: #239b56; color: var(--text-calm-white); }
-
-[class^="markup"] [class^="syntaxBefore"] span, 
-[class^="markup"] [class^="syntaxAfter"] span { 
-	color: #616a6b; 
-}
-
-[class*="markup"] [class*="bold"] span, 
-[class*="markup"] [class*="italics"] span, 
-[class*="markup"] [class*="underline"] span, 
-[class*="markup"] [class*="strikethrough"] span {
-	color: #d2b4de !important;
-}
-
-[class*="layer"] div { color: var(--text-calm-white); }
-[class*="modeMuted"] div { color: var(--interactive-muted); }
-[class*="modeUnread"] [class^="channelName"] { color: #f0f0f0; }
-
-[class*="activityText"] { color: #fdd605 !important; }
+[class*="activityText"], [class*="customStatus"] { color: #fdd605 !important; }
 [class*="activityText"] strong { color: #92ec95 !important; }
 
 /* WARNING: CLASS-NAME SPECIFIC ; MAY BREAK AFTER UPDATES */
