@@ -38,7 +38,7 @@
   --background-modifier-selected: #138d758b;
   --background-modifier-accent: #138d758b;
   
-  --text-normal: #aed6f1;
+  --text-normal: #bde6fc;
   --text-muted: #b5b5b5;
   --text-link: #f7dc6f;
   
@@ -51,14 +51,18 @@
   --font-code: 'Lucida Console', Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
 }
 
+[class^="channelTextArea"] div { background-color: var(--background-secondary-alt) !important; }
+
+[class*="Modal"], [class^="focusLock"] [class^="root"] { background-color: var(--background-secondary) !important; }
+[class*="footer"] { background-color: var(--background-tertiary) !important; }
+
 [class*="tab"] { background-color: var(--background-primary); }
 
 [class^="botTag"], [class^="headerBotTag"] { background-color: #b03a2e; }
 [class^="botTagVerified"] { background-color: #12bc35; margin-right: 5px; }
 
-[class^="focusLock"] div { background-color: var(--background-secondary); }
-[class^="focusLock"] [class^="flex"] { background-color: var(--background-tertiary); }
-[class^="focusLock"] [class^="flex"] button div { background-color: initial; }
-
 [class^="userLimit"] [class^="users"] { color: #e0e0e0; }
 [class^="userLimit"] [class^="total"] { padding-left: 4px; width: auto; background-color: #239b56; color: #e0e0e0; }
+
+[class^="markup"] [class^="syntaxBefore"] span, [class^="markup"] [class^="syntaxAfter"] span { color: #616a6b; }
+[class^="markup"] [class^="bold"] span, [class^="markup"] [class^="italics"] span { color: #d2b4de !important; }
