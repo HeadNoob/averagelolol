@@ -30,12 +30,12 @@
   --text-link: #f7dc6f;
 	  --text-calm-white: #eaeded;
 	
-	--interactive-muted: #909497;
+  --interactive-muted: #909497;
 	
   --channeltextarea-background: var(--background-secondary-alt);
   --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
 	
-  font-family: 'Exo 2', fontawesome, sans-serif;
+  font-family: 'Exo 2', 'Lucida Sans Unicode', sans-serif;
   --font-code: 'Lucida Console', Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
 }
 
@@ -44,7 +44,7 @@
 [class*="Modal"], [class^="focusLock"] [class^="root"], [class^="focusLock"] [class^="modalRoot"], 
   [class^="focusLock"] [class^="header"], [class^="modal"] div { background-color: var(--background-secondary) !important; }
 
-[class*="footer"] { background-color: var(--background-tertiary) !important; }
+[class*="footer"]:not(.footer-3UKYOU) { background-color: var(--background-tertiary) !important; }
 
 [class*="tab"] { background-color: var(--background-primary); }
 
@@ -58,6 +58,9 @@
 
 [class^="layer"] div { color: var(--text-calm-white); }
 [class*="modeMuted"] div { color: var(--interactive-muted); }
+
+[class^="activityText"] { color: #fdd605 !important; }
+[class^="activityText"] strong { color: #92ec95 !important; }
 
 /* WARNING: CLASS-NAME SPECIFIC ; MAY BREAK AFTER UPDATES */
 .container-2ax-kl { text-transform: unset; }
