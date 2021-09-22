@@ -1,7 +1,10 @@
-/*               DISCORD CUSTOM STYLING
- *  No copyright, but if you want to support me, please
- * credit me if you plan to modify this CSS and publish
- * the modified version!
+/*               DISCORD CUSTOM STYLING (By HeadNoob)
+ *  Credits to: averagelolol - project starter
+ *  You can find the original project here: https://github.com/averagelolol/averagelolol/blob/master/css/discordapp.css
+ *  
+ *  Discord: HeadNoob#3775
+ *  GitHub: HeadNoob
+ *  osu! profile: HeadNoob
  *
  *                     HOW TO USE
  * 1. Install Stylus (or any CSS injector)
@@ -53,7 +56,7 @@
 
 [class*="focusLock"] [class*="root"], [class^="modal"] [class^="inner"] { background-color: var(--background-secondary) !important; }
 [class*="focusLock"] h3 { color: var(--text-calm-white); }
-[class*="footer"]:not(.3UKYOU) { background-color: var(--background-tertiary) !important; }
+[class*="footer"]:not { background-color: var(--background-tertiary) !important; }
 
 [class*="tab"] { background-color: var(--background-primary); }
 [class*="tabBar"] { background-color: unset !important; }
