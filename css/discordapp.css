@@ -7,7 +7,6 @@
  * 1. Install Stylus (or any CSS injector)
  * 2. Copy and paste the CSS below and tell the injector
  *    to only use the CSS below for 'discord.com'
- *    (preferred: ptb.discord.com for Public Test Beta).
  * 3. Done!
  */
 *, [class^="theme"] { 
@@ -30,69 +29,66 @@
   --text-muted: #b5b5b5;
   --text-link: #f7dc6f;
 	
+  --interactive-normal: #e0e0e0;
+  --interactive-hover: #fcf3cf;
   --interactive-muted: #626567;
 	
   --channeltextarea-background: var(--background-secondary-alt);
   --deprecated-quickswitcher-input-background: var(--background-secondary-alt);
 	
-	--font-primary: 'Exo 2', 'Lucida Sans Unicode', sans-serif;
-	--font-display: var(--font-primary);
-	--font-headline: var(--font-primary);
+  --font-primary: 'Exo 2', 'Lucida Sans Unicode', sans-serif;
+  --font-display: var(--font-primary);
+  --font-headline: var(--font-primary);
   --font-code: 'Lucida Console', Inconsolata, Consolas, 'Courier New', Courier, monospace !important;
   
-	font-family: var(--font-primary);
+  text-rendering: geometricPrecision;
 }
 
-[id*="private-channels-"] [class*="layout"]:hover,
+[id*="channels"] [class*="layout"]:hover,
 [class*="membersWrap"] [class*="layout"]:hover,
-#channels [class*="containerDefault"] [class*="content"]:hover { 
-	background-color: var(--background-modifier-hover);
-	transition: 300ms ease-in-out;
+[class*="containerDefault"] [class*="content"]:hover { 
+  background-color: var(--background-modifier-hover);
+  transition: 250ms ease-in-out;
 }
 
-[class*="channelTextArea"] div { background-color: var(--background-secondary-alt) !important; }
-
-[class*="focusLock"] [class*="root"] { 
-	background-color: var(--background-secondary) !important; 
-}
-
+[class*="focusLock"] [class*="root"], [class^="modal"] [class^="inner"] { background-color: var(--background-secondary) !important; }
 [class*="focusLock"] h3 { color: var(--text-calm-white); }
-[class*="tabBar"] { background-color: unset !important; }
-
-[class*="footer"]:not(.footer-3UKYOU) { background-color: var(--background-tertiary) !important; }
+[class*="footer"] { background-color: var(--background-tertiary) !important; }
 
 [class*="tab"] { background-color: var(--background-primary); }
+[class*="tabBar"] { background-color: unset !important; }
 
 [class*="botTag"], [class^="headerBotTag"] { background-color: #b03a2e; } 
 [class*="botTagVerified"] { background-color: #12bc35; margin-right: 5px; }
 
-[class*="flowerStarContainer"] { color: #8b8210 !important; }
-
 [class*="userLimit"] [class*="users"] { color: #e0e0e0; } 
 [class*="userLimit"] [class*="total"] { padding-left: 4px; width: auto; background-color: #239b56; color: var(--text-calm-white); }
 
+[class*="flowerStarContainer"] { color: #235012 !important; }
+
 [class^="markup"] [class^="syntaxBefore"] span, 
 [class^="markup"] [class^="syntaxAfter"] span { 
-	color: #616a6b; 
+  color: #616a6b; 
 }
 
 [class*="markup"] [class*="bold"] span, 
 [class*="markup"] [class*="italics"] span, 
 [class*="markup"] [class*="underline"] span, 
 [class*="markup"] [class*="strikethrough"] span {
-	color: #d2b4de !important;
+  color: #d2b4de !important;
 }
 
 [class*="markup"] [class*="codeBlockSyntax"] span,
 [class*="markup"] [class*="inlineCode"] span {
-	font-family: var(--font-code);
+  font-family: var(--font-code);
 }
-
-[class*="modeMuted"] div { color: var(--interactive-muted); }
-[class*="modeUnread"] [class^="channelName"] { color: #f0f0f0; }
 
 [class*="activityText"], [class*="customStatus"] { color: #fdd605 !important; }
 [class*="activityText"] strong { color: #92ec95 !important; }
 
+
+
+#channels [class*="channelName"], [id*="private-channels"] [class*="overflow"] { font-size: 14px; }
+
 /* WARNING: CLASS-NAME SPECIFIC ; MAY BREAK AFTER UPDATES */
-.container-2ax-kl { text-transform: unset; font-size: 13px; }
+.container-2ax-kl { text-transform: unset; font-size: 14px; }
