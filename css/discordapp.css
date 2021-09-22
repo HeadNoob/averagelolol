@@ -7,6 +7,7 @@
  * 1. Install Stylus (or any CSS injector)
  * 2. Copy and paste the CSS below and tell the injector
  *    to only use the CSS below for 'discord.com'
+ *    (preferred: ptb.discord.com for Public Test Beta).
  * 3. Done!
  */
 *, [class^="theme"] { 
@@ -20,15 +21,14 @@
   --background-mobile-primary: var(--background-primary);
   --background-mobile-secondary: var(--background-secondary);
   
-  --background-modifier-hover: #5dade275;
+  --background-modifier-hover: #5dade265;
   --background-modifier-active: #5dade280;
-  --background-modifier-selected: #138d758b;
-  --background-modifier-accent: #138d758b;
+  --background-modifier-selected: #043c45;
+  --background-modifier-accent: #043c45;
   
-  --text-normal: #bde6fc;
+  --text-normal: #cdeafd;
   --text-muted: #b5b5b5;
   --text-link: #f7dc6f;
-	  --text-calm-white: #d3d3d3;
 	
   --interactive-muted: #626567;
 	
@@ -43,28 +43,21 @@
 	font-family: var(--font-primary);
 }
 
-@keyframes channelHover {
-	from { background-color: #5dade200; }
-	to { background-color: var(--background-modifier-hover) }
+[id*="private-channels-"] [class*="layout"]:hover,
+[class*="membersWrap"] [class*="layout"]:hover,
+#channels [class*="containerDefault"] [class*="content"]:hover { 
+	background-color: var(--background-modifier-hover);
+	transition: 300ms ease-in-out;
 }
-
-[id^="private-channels-"]:hover,
-[id*="channels"] div [class*="content"]:hover,
-[class*="sidebar"] [class*="item"]:hover,
-[class*="members"] [class*="member-"]:hover { 
-	animation: channelHover 450ms forwards; 
-}
-
 
 [class*="channelTextArea"] div { background-color: var(--background-secondary-alt) !important; }
 
-[class*="focusLock"] [class*="modalRoot"],
-[class*="focusLock"] [class*="root"],
-[class*="modal"] [class*="inner"] { 
+[class*="focusLock"] [class*="root"] { 
 	background-color: var(--background-secondary) !important; 
 }
 
 [class*="focusLock"] h3 { color: var(--text-calm-white); }
+[class*="tabBar"] { background-color: unset !important; }
 
 [class*="footer"]:not(.footer-3UKYOU) { background-color: var(--background-tertiary) !important; }
 
@@ -90,7 +83,11 @@
 	color: #d2b4de !important;
 }
 
-[class*="layer"] div { color: var(--text-calm-white); }
+[class*="markup"] [class*="codeBlockSyntax"] span,
+[class*="markup"] [class*="inlineCode"] span {
+	font-family: var(--font-code);
+}
+
 [class*="modeMuted"] div { color: var(--interactive-muted); }
 [class*="modeUnread"] [class^="channelName"] { color: #f0f0f0; }
 
